@@ -91,7 +91,7 @@ def createLinePlot(DataFrame, x_axes, y_axes, title='Plot'):
             'x': 0.5,
             'xanchor': 'center',
             'yanchor': 'top',
-            'font': {'size': 30, 'color': '#656EF2'},
+            'font': {'size': 30, 'color': '#2B66C2'},
         }, 
         xaxis_title='Waktu',
     )
@@ -108,7 +108,7 @@ def createBarPlot(DataFrame, x_axes, y_axes, title='Plot'):
         'x': 0.5,
         'xanchor': 'center',
         'yanchor': 'top',
-        'font': {'size': 20, 'color': '#656EF2'},
+        'font': {'size': 20, 'color': '#2B66C2'},
     }
     fig.update_layout(
         title=title_plot,
