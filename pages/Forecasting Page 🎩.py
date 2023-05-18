@@ -40,8 +40,8 @@ if input_n_days:
     max_value_date = forecasting_results['Harga'].idxmax()
     min_value = int(forecasting_results['Harga'].min())/1000
     min_value_date = forecasting_results['Harga'].idxmin()
-    str_max = "{}rb ({})".format(str(max_value), datetime.strftime(max_value_date, "%d-%m-%Y"))
-    str_min = "{}rb ({})".format(str(min_value), datetime.strftime(min_value_date, "%d-%m-%Y"))
+    str_max = "{}rb ({})".format(str(int(max_value)), datetime.strftime(max_value_date, "%d-%m-%Y"))
+    str_min = "{}rb ({})".format(str(int(min_value)), datetime.strftime(min_value_date, "%d-%m-%Y"))
     local_session['max_value'] = str_max
     local_session['min_value'] = str_min
     st.markdown(
